@@ -16,12 +16,13 @@ volatile unsigned char move_flag = 0; // 0: 없음, 1: 좌측이동, 2: 우측�
 
 void interruptInit(void)
 {
+	//스위치 핀 입력 설정 및 내부 풀업 저항 켜기
 	DDRE &= ~((1 << INT_SW3_PIN) | (1 << INT_SW4_PIN));
 	PORTE |= (1 << INT_SW3_PIN) | (1 << INT_SW4_PIN);
-
+	//인터럽트 발생 조건 설정
 	EICRB &= ~((1 << ISC40) | (1 << ISC50));
 	EICRB |= (1 << ISC41) | (1 << ISC51);
-
+	//INT4, INT5 외부 인터럽트
 	EIMSK |= (1 << INT4) | (1 << INT5);
 }
 
