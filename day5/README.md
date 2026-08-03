@@ -40,6 +40,7 @@ Register (Datasheet 132 ~ )
       + 원리: 원래는 카운터(TCNT)가 증가하다가 OCR 설정값과 똑같아져야 핀 출력 상태가 바뀝니다. 하지만 이 비트(FOC1A 등)에 1을 써서 넣어주는 순간, TCNT 숫자와 상관없이 즉시 '비교 일치' 상황이 일어난 것으로 강제 조작합니다. 이에 따라 COMnx1:0에 설정된 대로 핀 전압(TOGGLE, HIGH, LOW)이 즉시 바뀝니다.
    
   <img width="950" height="1192" alt="image" src="https://github.com/user-attachments/assets/99ae114d-dfbe-4aa4-9950-676c8fd06743" />
+
   + TCNTnH / TCNTnL
       + 16비트 접근 방식: 8비트 데이터 버스를 사용하는 MCU 특성상, 16비트를 한 번에 다루기 위해 상위 8비트(H)와 하위 8비트(L)로 나누어져 있
   + OCR1AH/L, OCR1BH/L, OCR1CH/L
