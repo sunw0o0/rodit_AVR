@@ -27,6 +27,8 @@
 | 주도권 | 통신 시작 가능 | 통신 시작 불가능 |
 | 클록 (SCL) | 직접 생성 | 마스터의 클록에 맞춤 |
 | 개수 | 주로 1개 | 여러개 |
+<img width="800" height="225" alt="image" src="https://github.com/user-attachments/assets/448584cc-bd89-4ca4-8085-3533e0ef1b15" />
+
 -------------------------------  
 # UART 통신
 + 232 통신
